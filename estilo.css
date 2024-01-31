@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    --color1: #FFF;
+    --color2: #6e3dd7;
+    --color3: #7eff7c;
+
+}
+
+.nav-bar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 12px 20px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.75;
+    padding-left: 0
+}
+
+#menu-title {
+    display: none;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color1);
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+    transition: color 0.3s ease, padding 0.3s ease;
+}
+
+.menu li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+    background: var(--color3);
+}
+
+.menu li a:hover {
+    color: var(--color3);
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    left: 20px;
+}
+
+#check {
+    display: none;
+}
+
+@media(max-width: 750px) {
+    .nav-bar {
+        justify-content: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        padding-left: 20px;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+
+    #menu-title {
+        display: block;
+        color: #FFF;
+        font-size: 2em;
+        font-weight: bold;
+        width: 100%;
+        padding: 10px 0;
+        text-align: left;
+        transition: all 0.3s ease;
+        margin-left: 10px;
+    }
+
+    .menu li {
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+    .menu li a {
+        padding: 10px 0;
+        color: var(--color1);
+        transition: color 0.3s ease, padding 0.3s ease;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .menu li a::after {
+        content: "";
+        display: block;
+        margin: auto;
+        height: 2px;
+        background: var(--color1);
+        transition: width 0.3s ease;
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .menu li a:hover::after {
+        width: 100%;
+        background: var(--color3);
+    }
+
+    .menu li a:hover {
+        color: var(--color3);
+        padding: 10px 0;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+
+    #check:checked~.menu {
+        left: 0;
+    }
+}
