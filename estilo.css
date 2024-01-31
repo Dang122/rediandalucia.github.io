@@ -101,6 +101,11 @@ body {
         justify-content: flex-start;
     }
 
+    #logo
+    {
+        margin-left: 16em;
+    }
+
     .menu {
         flex-direction: column;
         align-items: flex-start;
