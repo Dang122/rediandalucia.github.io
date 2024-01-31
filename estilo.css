@@ -28,6 +28,10 @@ body {
     width: 40px;
 }
 
+#logo
+{
+    margin-right: 5em;
+}
 .menu {
     display: flex;
     justify-content: space-between;
