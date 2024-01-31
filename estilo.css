@@ -31,7 +31,7 @@ body {
 .menu {
     display: flex;
     justify-content: space-between;
-    flex-grow: 0.75;
+    flex-grow: 0.60;
     padding-left: 0
 }
 
