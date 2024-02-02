@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
     <link rel="stylesheet" href="estilo.css">
     <title>Document</title>
+    <script src="acciones.js"></script>
 </head>
 <body>
     <header>
@@ -16,8 +18,8 @@
                     <p id="menu-title">Menu</p>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="ciudades.html">Ciudades</a></li>
-                    <li><a href="acerca.html">Acerca</a></li>
                     <li><a href="contacto.html">Contacta</a></li>
+
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
@@ -25,5 +27,19 @@
         </nav>
     </header>
     <h1>Contacto</h1>
+    <div id="contact-form">
+        <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+            <button type="button" onclick="validarFormulario()">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>
