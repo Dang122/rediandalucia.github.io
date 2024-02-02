@@ -60,6 +60,7 @@ body{
     font-size: 12rem;
     color: #007932;
     position: relative;
+    z-index: 100;
 }
 /* SECCION TOURS */
 .tours{
@@ -71,7 +72,7 @@ body{
     z-index: 100;
 }
 h2{
-    color: #334755;
+    color: #007932;
     font-size: 20px;
     font-family: 'Londrina Solid';
     text-transform: uppercase;
@@ -93,7 +94,7 @@ h2{
 }
 .tours .fila i{
     font-size: 35px;
-    color: #334755;
+    color: #007932;
     display: inline-block;
 }
 .tours .fila p{
@@ -233,7 +234,7 @@ h2{
 }
 /* SECCION ES AHORA */
 .esahora{
-    background: url(img/burro.jpg);
+    background: url(img/burro.png);
     background-size: cover;
     height: 100vh;
 }
@@ -245,8 +246,8 @@ h2{
     font-size: 40px;
     display: inline-block;
     margin: 0 30px;
-    color: #007932;;
+    color: #ffffff;;
 }
 .esahora .color{
-    color: #007932;
+    color: #ffffff;
 }
