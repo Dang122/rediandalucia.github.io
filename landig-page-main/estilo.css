@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -163,7 +164,7 @@ h2 {
 /* SECCION DESCUBRIR */
 .descubrir {
     position: relative;
-    margin-top: 15%;
+    margin-top: 5%;
     text-align: center; /* Centrar el contenido */
 }
 
@@ -210,6 +211,7 @@ h2 {
 
 /* SECCION SUBSCRIBASE */
 .subscribase {
+    margin-top: 2%;
     background: url(img/alhambra.jpg);
     background-size: cover;
     padding: 60px 0;
@@ -262,7 +264,7 @@ form {
 
   button {
     background-color: #007932;
-    border: 2px solid #007932;
+    border: 3px solid #007932;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -274,5 +276,5 @@ form {
   button:hover {
     border: 3px solid #007932;
     background-color: transparent;
-    color: white;
+    color: #007932;
   }

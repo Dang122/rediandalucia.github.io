@@ -15,7 +15,7 @@ $(window).on('scroll',function(){
   });
 
   //efecto3
-  var surfing = document.getElementById('surfing');
+  var surfing = document.getElementById('contacto');
   d = surfing.getBoundingClientRect().top - 300;
   $('.efecto3').css({
     'transform':'translate3d(0, ' + (d * .30) + 'px,0)',
