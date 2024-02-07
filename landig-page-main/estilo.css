@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -165,10 +164,11 @@ h2 {
 .descubrir {
     position: relative;
     margin-top: 15%;
+    text-align: center; /* Centrar el contenido */
 }
 
 .descubrir .fondo-img {
-    background: url('img/descubrir.png'); /* Cambia 'otra_foto.jpg' por la ruta de tu imagen de fondo */
+    background: url('img/descubrir.png');
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -178,58 +178,40 @@ h2 {
     right: 0;
     z-index: -1;
 }
-.cuadrado{
-    width: 40px;
-    height: 40px;
-    border: 1px solid black;
+
+.fotos .fila {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
-.descubrir .contenido-seccion {
-    position: relative;
+.fotos .fila .cuadrado {
+    position: relative; /* Establecer posición relativa */
+    width: 22%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.fotos .fila .cuadrado img {
     width: 100%;
-    padding-bottom: 100px;
+    border: 2px solid #000;
+    border-radius: 15%;
 }
 
-.descubrir .contenido-seccion img {
-    width: 100%;
+.texto-foto {
+    position: absolute; 
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: white;
+    width: 60%;
+    opacity: 0.6;
 }
-
-.descubrir .contenido-seccion .info {
-    position: absolute;
-    text-align: center;
-    top: 0;
-    max-width: 900px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 150px;
-}
-
-.descubrir .contenido-seccion .info p {
-    color: #666;
-    font-size: 18px;
-    margin-top: 15px;
-    line-height: 25px;
-}
-
-.descubrir .contenido-seccion button {
-    background-color: #fff;
-    border: none;
-    border: 2px solid #334755;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    color: #666;
-    margin-top: 40px;
-    cursor: pointer;
-}
-
 
 /* SECCION SUBSCRIBASE */
 .subscribase {
     text-align: center;
     padding: 60px 0;
-    margin: 0;
-    background: url(img/alhambra.jpg);
-    background-size: cover;
 }
 
 .subscribase input {
@@ -264,43 +246,3 @@ h2 {
 .esahora .color {
     color: #ffffff;
 }
-
-form {
-    padding: 20px;
-    border-radius: 8px;
-    width: 50%;
-    margin: 0 auto; /* Agrega esta línea para centrar horizontalmente */
-    margin-top: 50px; /* Ajusta la distancia desde la parte superior según sea necesario */
-  }
-
-  label {
-    display: block;
-    margin-bottom: 8px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    border-radius: 4px;
-
-  }
-
-  button {
-    background-color: #007932;
-    border: 2px solid #007932;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 0.2s ;
-  }
-
-  button:hover {
-    border: 3px solid #007932;
-    background-color: transparent;
-    color: white;
-  }
