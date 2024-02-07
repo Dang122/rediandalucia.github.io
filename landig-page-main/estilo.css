@@ -210,19 +210,11 @@ h2 {
 
 /* SECCION SUBSCRIBASE */
 .subscribase {
-    text-align: center;
+    background: url(img/alhambra.jpg);
+    background-size: cover;
     padding: 60px 0;
 }
 
-.subscribase input {
-    display: inline-block;
-    margin-top: 20px;
-    width: 400px;
-    font-size: 20px;
-    padding: 10px;
-    border: 1px solid #334755;
-    text-align: center;
-}
 
 /* SECCION ES AHORA */
 .esahora {
@@ -248,9 +240,11 @@ h2 {
 }
 
 form {
+    
+    margin-left: 15em;
     padding: 20px;
     border-radius: 8px;
-    width: 50%;
+    width: 30%;
   }
   label {
     margin-bottom: 8px;
