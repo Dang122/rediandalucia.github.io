@@ -1,25 +1,31 @@
 /* importamos las fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Londrina+Solid:wght@300;400&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     height: 100vh;
 }
-.inicio{
+
+/* SECCION INICIO */
+.inicio {
     height: 100%;
 }
-.inicio .fondo-cielo{
+
+.inicio .fondo-cielo {
     position: absolute;
     width: 100%;
-    background: linear-gradient(rgba(255,255,255,0) 80%, rgba(255,255,255,1)),
+    background: linear-gradient(rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1)),
     url(img/cielo.png);
     background-size: cover;
     height: 85%;
     z-index: -10;
 }
-.inicio .fondo-img{
+
+.inicio .fondo-img {
     background: url(img/inicio1.png);
     background-size: cover;
     background-position: bottom;
@@ -29,32 +35,37 @@ body{
     width: 100%;
     z-index: 5;
 }
-.inicio .contenido-seccion{
+
+.inicio .contenido-seccion {
     max-width: 1200px;
     margin: auto;
 }
-.inicio .contenido-seccion header{
+
+.inicio .contenido-seccion header {
     padding: 50px 20px;
     z-index: 100;
     position: relative;
-
 }
-.inicio .contenido-seccion header nav{
+
+.inicio .contenido-seccion header nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-family: 'Londrina Solid';
 }
-.inicio .contenido-seccion header nav a{
+
+.inicio .contenido-seccion header nav a {
     text-decoration: none;
     color: #007932;
     font-size: 20px;
     text-transform: uppercase;
 }
-.inicio .contenido-seccion header nav a i{
+
+.inicio .contenido-seccion header nav a i {
     font-size: 30px;
 }
-.titulo{
+
+.titulo {
     font-family: 'Finger Paint';
     text-align: center;
     font-size: 12rem;
@@ -62,8 +73,9 @@ body{
     position: relative;
     z-index: 100;
 }
+
 /* SECCION TOURS */
-.tours{
+.tours {
     text-align: center;
     max-width: 1100px;
     margin: auto;
@@ -71,47 +83,55 @@ body{
     margin-top: 100px;
     z-index: 100;
 }
-h2{
+
+h2 {
     color: #007932;
     font-size: 20px;
     font-family: 'Londrina Solid';
     text-transform: uppercase;
     letter-spacing: 5px;
 }
-.tours > p{
+
+.tours > p {
     color: #666;
     line-height: 35px;
     font-size: 20px;
 }
-.tours .fila{
+
+.tours .fila {
     display: flex;
     margin-top: 30px;
     justify-content: space-between;
 }
-.tours .fila .col{
-    width: 30%;
 
+.tours .fila .col {
+    width: 30%;
 }
-.tours .fila i{
+
+.tours .fila i {
     font-size: 35px;
     color: #007932;
     display: inline-block;
 }
-.tours .fila p{
+
+.tours .fila p {
     color: #666;
     font-size: 18px;
     margin-top: 15px;
     line-height: 25px;
 }
+
 /* SECCION INFO */
-.info{
+.info {
     position: relative;
 }
-.info img{
+
+.info img {
     width: 70%;
 }
-.info .texto{
-    background: rgba(255,255,255,.7);
+
+.info .texto {
+    background: rgba(255, 255, 255, .7);
     max-width: 600px;
     border: 2px solid #334755;
     padding: 30px;
@@ -120,14 +140,16 @@ h2{
     right: 100px;
     transform: translateY(-50%);
 }
-.info .texto p{
+
+.info .texto p {
     margin: 10px 0;
     color: #666;
     font-size: 18px;
     margin-top: 15px;
     line-height: 25px;
 }
-.info .texto button{
+
+.info .texto button {
     background-color: #fff;
     border: none;
     border: 2px solid #334755;
@@ -137,16 +159,41 @@ h2{
     margin-top: 40px;
     cursor: pointer;
 }
+
 /* SECCION DESCUBRIR */
-.descubrir .contenido-seccion{
+.descubrir {
+    position: relative;
+    margin-top: 15%;
+}
+
+.descubrir .fondo-img {
+    background: url('/Proyecto-Anuel/landig-page-main/img/descubrir.png'); /* Cambia 'otra_foto.jpg' por la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.cuadrado{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.descubrir .contenido-seccion {
     position: relative;
     width: 100%;
-    bottom:  150px;
+    padding-bottom: 150px;
 }
-.descubrir .contenido-seccion img{
+
+.descubrir .contenido-seccion img {
     width: 100%;
 }
-.descubrir .contenido-seccion .info{
+
+.descubrir .contenido-seccion .info {
     position: absolute;
     text-align: center;
     top: 0;
@@ -155,13 +202,15 @@ h2{
     transform: translateX(-50%);
     padding-top: 150px;
 }
-.descubrir .contenido-seccion .info p{
+
+.descubrir .contenido-seccion .info p {
     color: #666;
     font-size: 18px;
     margin-top: 15px;
     line-height: 25px;
 }
-.descubrir .contenido-seccion button{
+
+.descubrir .contenido-seccion button {
     background-color: #fff;
     border: none;
     border: 2px solid #334755;
@@ -171,59 +220,69 @@ h2{
     margin-top: 40px;
     cursor: pointer;
 }
+
 /* SECCION COLECCION */
-.coleccion{
+.coleccion {
     max-width: 1200px;
     margin: auto;
     text-align: center;
 }
-.coleccion .fila{
+
+.coleccion .fila {
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
-.coleccion .fila img{
+
+.coleccion .fila img {
     max-height: 120px;
 }
-.coleccion .fila .col{
+
+.coleccion .fila .col {
     margin: 0 30px;
     border: 2px solid #334755;
     max-width: 200px;
     width: 100%;
     text-align: center;
 }
-.coleccion .fila .col .nombre{
+
+.coleccion .fila .col .nombre {
     color: #334755;
     text-transform: uppercase;
     font-size: 15px;
     margin: 20px 0;
 }
-.coleccion .fila .col h3{
+
+.coleccion .fila .col h3 {
     border: 2px solid #334755;
     width: fit-content;
     margin: 20px auto;
     padding: 5px 15px;
 }
+
 /* SECCION SURFING */
-.surfing{
+.surfing {
     background: url(img/surfing.png);
     height: 100vh;
     background-size: cover;
     position: relative;
 }
-.surfing .posicion{
+
+.surfing .posicion {
     position: absolute;
     bottom: 50px;
     text-align: center;
     width: 100%;
     color: #ffe538;
 }
+
 /* SECCION SUBSCRIBASE */
-.subscribase{
+.subscribase {
     text-align: center;
     padding: 60px 0;
 }
-.subscribase input{
+
+.subscribase input {
     display: inline-block;
     margin-top: 20px;
     width: 400px;
@@ -232,22 +291,26 @@ h2{
     border: 1px solid #334755;
     text-align: center;
 }
+
 /* SECCION ES AHORA */
-.esahora{
+.esahora {
     background: url(img/burro.png);
     background-size: cover;
     height: 100vh;
 }
-.esahora .redes{
+
+.esahora .redes {
     text-align: center;
 }
-.esahora .redes a{
+
+.esahora .redes a {
     text-decoration: none;
     font-size: 40px;
     display: inline-block;
     margin: 0 30px;
-    color: #ffffff;;
+    color: #ffffff;
 }
-.esahora .color{
+
+.esahora .color {
     color: #ffffff;
 }

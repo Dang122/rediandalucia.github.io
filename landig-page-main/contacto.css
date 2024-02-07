@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Londrina+Solid:wght@300;400&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+#contact-form {
+    background: #007932;
+    padding: 20px;
+    margin: 5% 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 500;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+/* importamos las fuentes */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+}
+.inicio{
+    height: 100%;
+}
+.inicio .fondo-cielo{
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(rgba(255,255,255,0) 80%, rgba(255,255,255,1)),
+    url(img/cielo.png);
+    background-size: cover;
+    height: 85%;
+    z-index: -10;
+}
+.inicio .fondo-img{
+    background: url(img/inicio1.png);
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    height: 110%;
+    width: 100%;
+    z-index: -5;
+}
+.inicio .contenido-seccion{
+    max-width: 1200px;
+    margin: auto;
+}
+.inicio .contenido-seccion header{
+    padding: 50px 20px;
+    z-index: 100;
+    position: relative;
+
+}
+.inicio .contenido-seccion header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Londrina Solid';
+}
+.inicio .contenido-seccion header nav a{
+    text-decoration: none;
+    color: #007932;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.inicio .contenido-seccion header nav a i{
+    font-size: 30px;
+}
+.titulo{
+    font-family: 'Finger Paint';
+    text-align: center;
+    font-size: 12rem;
+    color: #007932;
+    position: relative;
+    z-index: 100;
+}
