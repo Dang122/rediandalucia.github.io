@@ -7,11 +7,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
-    <title>Mountain</title>
+    <title>Redi Andalucia</title>
 </head>
 <body>
     <!-- SECCION INICIO -->
-    <section class="inicio">
+    <section class="inicio" id="inicio">
         <div class="fondo-cielo"></div>
         <div class="fondo-img"></div>
         <div class="contenido-seccion">
@@ -21,9 +21,9 @@
                         <i class="fa-solid fa-mountain"></i>
                         Redi Andalucia
                     </a>
-                    <a href="/index.html">Inicio</a>
+                    <a href="#inicio">Inicio</a>
                     <a href="/ciudades.html">Ciudades</a>
-                    <a href="/contacto.html">Contacto</a>
+                    <a href="#contacto">Contacto</a>
                 </nav>
             </header>
             <div class="titulo efecto1">
@@ -83,9 +83,20 @@
     </section>
 
     <!-- SECCION SUBSCRIBASE -->
-    <section class="subscribase">
-        <h2>Subscribase para mas noticias</h2>
-        <input type="text" placeholder="Ingrese su email">
+    <section class="subscribase" id="contacto">
+        <h2 class="titulo">Contacto</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+            <button type="submit">Enviar</button>
+          </form>
     </section>
 
     <!-- SECCION ES HORA -->

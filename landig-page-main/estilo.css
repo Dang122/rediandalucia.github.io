@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body{
     height: 100vh;
@@ -141,7 +142,7 @@ h2{
 .descubrir .contenido-seccion{
     position: relative;
     width: 100%;
-    bottom:  150px;
+    bottom:  100px;
 }
 .descubrir .contenido-seccion img{
     width: 100%;
@@ -171,57 +172,15 @@ h2{
     margin-top: 40px;
     cursor: pointer;
 }
-/* SECCION COLECCION */
-.coleccion{
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-}
-.coleccion .fila{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-.coleccion .fila img{
-    max-height: 120px;
-}
-.coleccion .fila .col{
-    margin: 0 30px;
-    border: 2px solid #334755;
-    max-width: 200px;
-    width: 100%;
-    text-align: center;
-}
-.coleccion .fila .col .nombre{
-    color: #334755;
-    text-transform: uppercase;
-    font-size: 15px;
-    margin: 20px 0;
-}
-.coleccion .fila .col h3{
-    border: 2px solid #334755;
-    width: fit-content;
-    margin: 20px auto;
-    padding: 5px 15px;
-}
-/* SECCION SURFING */
-.surfing{
-    background: url(img/surfing.png);
-    height: 100vh;
-    background-size: cover;
-    position: relative;
-}
-.surfing .posicion{
-    position: absolute;
-    bottom: 50px;
-    text-align: center;
-    width: 100%;
-    color: #ffe538;
-}
+
+
 /* SECCION SUBSCRIBASE */
 .subscribase{
     text-align: center;
     padding: 60px 0;
+    margin: 0;
+    background: url(img/alhambra.jpg);
+    background-size: cover;
 }
 .subscribase input{
     display: inline-block;
@@ -251,3 +210,43 @@ h2{
 .esahora .color{
     color: #ffffff;
 }
+
+form {
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    margin: 0 auto; /* Agrega esta línea para centrar horizontalmente */
+    margin-top: 50px; /* Ajusta la distancia desde la parte superior según sea necesario */
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+
+  }
+
+  button {
+    background-color: #007932;
+    border: 2px solid #007932;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ;
+  }
+
+  button:hover {
+    border: 3px solid #007932;
+    background-color: transparent;
+    color: white;
+  }
