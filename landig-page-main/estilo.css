@@ -269,14 +269,10 @@ form {
     padding: 20px;
     border-radius: 8px;
     width: 50%;
-    margin: 0 auto; /* Agrega esta línea para centrar horizontalmente */
-    margin-top: 50px; /* Ajusta la distancia desde la parte superior según sea necesario */
   }
-
   label {
-    display: block;
     margin-bottom: 8px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
   }
 
