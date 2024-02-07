@@ -168,7 +168,7 @@ h2 {
 }
 
 .descubrir .fondo-img {
-    background: url('/Proyecto-Anuel/landig-page-main/img/descubrir.png'); /* Cambia 'otra_foto.jpg' por la ruta de tu imagen de fondo */
+    background: url('img/descubrir.png'); /* Cambia 'otra_foto.jpg' por la ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
     position: absolute;
