@@ -212,7 +212,9 @@ h2 {
 /* SECCION SUBSCRIBASE */
 .subscribase {
     margin-top: 2%;
-    background: url(img/alhambra.jpg);
+    background: url(img/ducha.jpg);
+    width: 100%;
+    height: 200%;
     background-size: cover;
     padding: 60px 0;
 }
